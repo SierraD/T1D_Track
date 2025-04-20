@@ -10,7 +10,7 @@ st.write("V0; 2025-04-20")
 
 conn = st.connection("gsheets", type=GSheetsConnection)
 
-data = conn.read(worksheet="Sheet 1")
+data = conn.read(worksheet="Sheet1")
 
 df_WO = pd.DataFrame(data.T)
 # df_WO = pd.DataFrame(data, columns=("%dHR" % i for i in range(25)))
