@@ -7,8 +7,11 @@ st.header("T1D Tracking")
 st.write("V0; 2025-04-20")
 
 conn = st.connection("gsheets", type=GSheetsConnection)
-df = conn.read()
-data = st.dataframe(df)
-st.write(data)
+
+df = conn.dataframe()
+st.write(df)
+#df = conn.read()
+#data = st.dataframe(df)
+#st.write(data)
 
 
