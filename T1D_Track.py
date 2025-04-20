@@ -16,7 +16,7 @@ st.write(df_WO)
 df_W = pd.DataFrame(data, columns=("%dHRW" % i for i in range(25)))
 st.write(df_W)
 
-chart = st.scatter_chart(df_WO)
+chart = st.scatter_chart(df_W)
 
 # st.scatter_chart(
 #     chart_data,
