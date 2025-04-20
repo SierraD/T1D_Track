@@ -10,10 +10,12 @@ st.write("V0; 2025-04-20")
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 data = conn.read()
-st.write(data)
+# st.write(data)
 
-df_WO = pd.DataFrame(data, columns=("%dHR" % i for i in range(24)))
+df_WO = pd.DataFrame(data, columns=("%dHR" % i for i in range(25)))
 st.write(df_WO)
+df_W = pd.DataFrame(data, columns=("%dHRW" % i for i in range(25)))
+st.write(df_W)
 
 # st.scatter_chart(
 #     chart_data,
