@@ -12,9 +12,9 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 
 data = conn.read()
 
-df_WO = pd.DataFrame(data, columns=("%dHR" % i for i in range(25)))
-df_WO = pd.DataFrame(data, columns=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y"])
-df_WO = df_WO.T
+df_WO = pd.DataFrame(data)
+# df_WO = pd.DataFrame(data, columns=("%dHR" % i for i in range(25)))
+# df_WO = df_WO.T
 # st.write(df_WO)
 # df_W = pd.DataFrame(data, columns=("%dHRW" % i for i in range(25)))
 # df_W = df_W.T
