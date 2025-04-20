@@ -11,7 +11,7 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 df = conn.read()
 dd = st.dataframe(df)
 st.write(df["0HR"])
-st.write(dd)
+st.write(dd["0HR":"24HR"])
 
 # st.scatter_chart(
 #     chart_data,
