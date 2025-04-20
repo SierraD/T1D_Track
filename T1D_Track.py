@@ -13,9 +13,10 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 data = conn.read()
 
 df_WO = pd.DataFrame(data, columns=("%dHR" % i for i in range(25)))
+df_WO = df_WO.T
 st.write(df_WO)
 # df_W = pd.DataFrame(data, columns=("%dHRW" % i for i in range(25)))
 # st.write(df_W)
 
-chart = st.scatter_chart(df_WO.T, color=["#ff0000", "#ff0000"], x_label=None)
+chart = st.scatter_chart(df_WO)
 
