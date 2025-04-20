@@ -9,7 +9,8 @@ st.write("V0; 2025-04-20")
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 df = conn.read()
-st.write(df["0HR":"24HR"])
+dd = st.dataframe(df)
+st.write(df["0HR"])
 
 
 # st.scatter_chart(
