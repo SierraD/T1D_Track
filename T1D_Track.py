@@ -12,7 +12,7 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 data = conn.read()
 st.write(data)
 
-df_WO = pd.DataFrame(data, columns=["0HR", "1HR", "2HR"]))
+df_WO = pd.DataFrame(data, columns=["0HR", "1HR", "2HR"])
 st.write(df_WO)
 
 # st.scatter_chart(
