@@ -2,16 +2,18 @@
 
 import streamlit as st
 from streamlit_gsheets import GSheetsConnection
+import pandas as pd
 
 st.header("T1D Tracking")
 st.write("V0; 2025-04-20")
 
 conn = st.connection("gsheets", type=GSheetsConnection)
 
-df = conn.read()
-dd = st.dataframe(df)
-st.write(df["0HR"])
-st.write(dd)
+data = conn.read()
+st.write(data)
+
+df = pd.dataframe(data)
+st.write(df)
 
 # st.scatter_chart(
 #     chart_data,
