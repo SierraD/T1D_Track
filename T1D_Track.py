@@ -8,9 +8,9 @@ st.write("V0; 2025-04-20")
 
 conn = st.connection("gsheets", type=GSheetsConnection)
 
-df = conn.dataframe()
-st.write(df)
-#df = conn.read()
+df = conn.read()
+st.write(df[0])
+
 #data = st.dataframe(df)
 #st.write(data)
 
