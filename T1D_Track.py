@@ -14,9 +14,8 @@ data = conn.read()
 
 df_WO = pd.DataFrame(data, columns=("%dHR" % i for i in range(25)))
 st.write(df_WO)
-df_W = pd.DataFrame(data, columns=("%dHRW" % i for i in range(25)))
-st.write(df_W)
+# df_W = pd.DataFrame(data, columns=("%dHRW" % i for i in range(25)))
+# st.write(df_W)
 
-chart = st.scatter_chart(x="Here", y=[2, 5])
+chart = st.scatter_chart(df_WO)
 
-#chart = st.scatter_chart(x=[0,0], y=[1,2])
