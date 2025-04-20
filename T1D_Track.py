@@ -9,7 +9,7 @@ st.write("V0; 2025-04-20")
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 df = conn.read()
-dd = st.dataframe(df, columns=["0HR", "1HR", "2HR"])
+dd = st.dataframe(df)
 st.write(df["0HR"])
 
 
