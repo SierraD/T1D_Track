@@ -9,7 +9,7 @@ st.write("V0; 2025-04-20")
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 df = conn.read()
-st.write(df)
+st.write(df["WITHOUT"])
 
 #data = st.dataframe(df)
 #st.write(data)
