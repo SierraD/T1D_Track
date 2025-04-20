@@ -21,7 +21,7 @@ st.write(df_WO["0HR"].tolist())
 s0 = np.zeros(len(df_WO["0HR"]))
 st.write(s0.tolist())
 
-chart = st.scatter_chart(x=s0.tolist(), y=df_WO["0HR"].tolist())
+chart = st.scatter_chart(x=None, y=df_WO["0HR"].tolist())
 
 # chart = st.scatter_chart(df_W)
 
