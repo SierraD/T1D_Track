@@ -17,10 +17,11 @@ st.write(df_WO)
 df_W = pd.DataFrame(data, columns=("%dHRW" % i for i in range(25)))
 st.write(df_W)
 
-st.write(len(df_WO["0HR"]))
+st.write(df_WO["0HR"])
 s0 = np.zeros(len(df_WO["0HR"]))
+st.write(s0)
 
-chart = st.scatter_chart(x=s0, y=df_WO["0HR"])
+# chart = st.scatter_chart(x=s0, y=df_WO["0HR"])
 
 # chart = st.scatter_chart(df_W)
 
