@@ -20,4 +20,4 @@ df_W = df_W.T
 # st.write(df_W)
 
 chart = st.scatter_chart(df_WO)
-chart.add_rows(df_W)
+# chart.add_rows(df_W)
